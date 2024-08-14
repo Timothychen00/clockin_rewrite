@@ -65,7 +65,7 @@ function handle_switch_page(page, b) {
 
                 <div style="margin-bottom: 0 !important;" class="dropdown d-inline-flex row mx-1 p-0" >
                     <button onclick="location.href='/logout'" class="content mb-2 button-black"  style="z-index: -999!important;position: absolute;">logout</button>
-                    <DashBoardItem item_name="Timothychen" class="bg-white simple-button" src="/avatar.jpeg" style="font-weight: 100;font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"></DashBoardItem>
+                    <DashBoardItem item_name="Timothychen" class="bg-white simple-button avatar" src="/avatar.jpeg" style="font-weight: 100;font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"></DashBoardItem>
 
                 </div>
             </div>
@@ -164,5 +164,8 @@ a {
 .button-black:focus{
     background-color: black;
     scale: 1.05;
+}
+.avatar{
+    border: dashed 4px rgb(74, 95, 164);
 }
 </style>

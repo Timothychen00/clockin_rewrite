@@ -15,7 +15,7 @@ const columns = computed(() => {
 
 <template>
     <TableElement class="d-flex p-0 row ps-3" style="overflow-y:scroll;">
-        <div class="d-flex tb-top row py-1">
+        <div class="d-flex tb-top row py-1 mt-2 mb-2">
             <template v-for="index in columns">
                 <div class="col tb-head">{{ Props.label[index - 1] }}</div>
             </template>
@@ -24,8 +24,8 @@ const columns = computed(() => {
             <template v-for="index in columns - 1">
                 <div class="col tb-element">1</div>
             </template>
-            <div class="col tb-element p-0">
-                <button class="bg-danger w-100 h-100 pt-0">刪除</button>
+            <div class="col tb-element ps-5 pe-0 d-inline-flex justify-content-end">
+                <button class="bg-danger h-100 pt-0 simple-button " style="width: 120px;">刪除</button>
             </div>
         </div>
         <template v-for="_ in 10">
@@ -33,8 +33,8 @@ const columns = computed(() => {
                 <template v-for="index in columns - 1">
                     <div class="col tb-element">1</div>
                 </template>
-                <div class="col tb-element p-0">
-                    <button class="bg-danger w-100 h-100 pt-0">刪除</button>
+                <div class="col tb-element ps-5 pe-0 d-inline-flex justify-content-end">
+                    <button class="bg-danger h-100 pt-0 simple-button" style="width: 120px;" >刪除</button>
                 </div>
             </div>
         </template>
@@ -78,5 +78,14 @@ const columns = computed(() => {
 
 .tb-head::after {
     content: '';
+}
+.simple-button:hover {
+    scale: 1.04;
+}
+.simple-button {
+    scale: 1.00;
+    animation-fill-mode: forwards;
+    transition: .1s;
+    animation-timing-function: ease-in;
 }
 </style>

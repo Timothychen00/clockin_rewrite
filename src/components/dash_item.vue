@@ -20,13 +20,13 @@ function handle_click(e) {
             <ion-icon style="font-size: 28px;" :name="Props.icon_name"></ion-icon>
         </template>
         <template v-else>
-            <img :src="Props.src" alt="8" style="height: 25px;" class="rounded">
+            <img :src="Props.src" alt="8" style="height: 45px;" class="rounded ">
         </template>
         <b id="word-3" class="ms-2"> {{ Props.item_name }}</b>
     </DashBoardItem>
 </template>
 
-<style>
+<style scoped>
 .rounded-4 {
     border-radius: .8rem;
 }
@@ -57,4 +57,5 @@ function handle_click(e) {
     color: white;
     scale: 1.04
 }
+
 </style>
